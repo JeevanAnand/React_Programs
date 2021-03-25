@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DATA VALIDATION</h1>
+    <p>Bank ID</p><input type="text" name="BankID" id="bank_id" maxlength="5">
+    <p>Account ID</p><input type="text" name="AccountID" id="account_id" maxlength="13"><br><br>
+    <input type="button" name=" " value="Validate" onclick="validate()">
+    <h2>Target Grid</h2>
+    <table id="target">
+        <tr>
+            <th>Bank ID </th>
+            <th>Account Type</th>
+            <th>Account Number</th>
+        </tr>
+    </table>
+    <h2>Error Grid</h2>
+    <table id="error">
+        <tr>
+            <th>Bank ID </th>
+            <th>Account ID</th>
+            <th>Reason</th>
+        </tr>
+    </table>
+    <script src="./BankDataValidation.js">
+    </script>
+</body>
+
+</html>
